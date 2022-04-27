@@ -3,6 +3,9 @@
 *::before {
   box-sizing: border-box;
 }
+html {
+  min-height: 100%;
+}
 body {
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.55);
   background: linear-gradient(
@@ -14,7 +17,7 @@ body {
   max-width: 1290px;
   margin: 0 auto;
   padding: 0;
-  min-height: 100vh;
+  min-height: 100%;
   overflow-x: hidden;
 }
 header {
@@ -23,7 +26,11 @@ header {
   height: 25vh;
   width: 100%;
 }
-
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: black;
@@ -115,4 +122,52 @@ liHead {
   width: 9em;
   height: 9em;
   padding: 10px;
+}
+/* mainArea */
+.mainArea {
+  border-collapse: collapse;
+  float: right;
+  width: 820px;
+  height: 75vh;
+}
+table {
+  background-color: white;
+  width: 800px;
+}
+.item0 {
+  height: 50px;
+}
+.mainArea > div {
+  margin: auto;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
+}
+/* tr:not(tr:first-child) th {
+  border: 1px solid gray;
+} */
+th {
+  width: 300px;
+  height: 350px;
+}
+img {
+  transition: all 0.3s linear;
+}
+th > img {
+  box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.51);
+  margin-left: 10px;
+  width: 535px;
+  transition: all 0.3s linear;
+  border-radius: 5px;
+}
+img:hover,
+th > img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+plateHead {
+  font-size: 20px;
+  color: #e98431;
+}
+p {
+  margin: 0 5px;
 }
